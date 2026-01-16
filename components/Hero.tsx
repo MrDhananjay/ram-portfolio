@@ -5,6 +5,7 @@ import React from 'react';
 import { ContactMeSvg } from "@/components/ContactMeSvg";
 import { InteractiveJiggleText } from "@/components/InteractiveJiggleText";
 
+
 export function Hero() {
     const container = {
         hidden: { opacity: 0 },
