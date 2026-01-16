@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Inter, Poppins } from "next/font/google";
 import { ViewProjectButton } from "./ViewProjectButton";
+import { TypewriterText } from "./TypewriterText";
 
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -43,9 +44,11 @@ export function CustomProjectCard({ number, title, description, defaultImage, ho
                         {title}
                     </h3>
 
-                    <p className={`${inter.className}`} style={{ fontSize: '18px', color: '#99A1AF', lineHeight: '1.5' }}>
-                        {description}
-                    </p>
+                    <TypewriterText
+                        text={description}
+                        className={`${inter.className}`}
+                        style={{ fontSize: '18px', color: '#99A1AF', lineHeight: '1.5' }}
+                    />
 
                     <div className="mt-auto">
                         <ViewProjectButton />
