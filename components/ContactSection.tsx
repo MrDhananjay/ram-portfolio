@@ -56,8 +56,8 @@ export function ContactSection() {
                         </p>
 
                         <div className="flex flex-col gap-4 text-text-secondary">
-                            <a href="mailto:hello@jaykay.design" className="hover:text-white transition-colors text-lg">hello@jaykay.design</a>
-                            <a href="tel:+1234567890" className="hover:text-white transition-colors text-lg">+1 (234) 567 890</a>
+                            <a href="mailto:ramsinghp670@gmail.com" className="hover:text-white transition-colors text-lg">ramsinghp670@gmail.com</a>
+                            <a href="tel:+919116790548" className="hover:text-white transition-colors text-lg">+91 9116790548</a>
                         </div>
                     </motion.div>
 
