@@ -63,12 +63,14 @@ export function Projects() {
                     ))}
                 </div>
 
-                <h2 className="text-[15vw] md:text-9xl font-display font-bold leading-none select-none text-center">
-                    <InteractiveJiggleText
-                        text="About Me"
-                        className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] [mask-image:linear-gradient(to_bottom,black,rgba(0,0,0,0.3))]"
-                    />
-                </h2>
+                <div id="about-me" className="scroll-mt-32">
+                    <h2 className="text-[15vw] md:text-9xl font-display font-bold leading-none select-none text-center">
+                        <InteractiveJiggleText
+                            text="About Me"
+                            className="text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.1)] [mask-image:linear-gradient(to_bottom,black,rgba(0,0,0,0.3))]"
+                        />
+                    </h2>
+                </div>
             </div>
         </section>
     );

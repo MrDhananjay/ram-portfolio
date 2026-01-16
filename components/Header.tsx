@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
     { name: "Projects", href: "#work" },
-    { name: "About", href: "https://www.jaykay.design/About", external: true },
+    { name: "About", href: "#about-me" },
     { name: "Contact", href: "#contact" },
 ];
 
@@ -74,7 +74,6 @@ export function Header() {
                         <Link
                             key={link.name}
                             href={link.href}
-                            target={link.external ? "_blank" : undefined}
                             className="text-sm font-medium text-white/80 hover:text-white transition-colors"
                         >
                             {link.name}
