@@ -22,21 +22,12 @@ export function TypewriterText({ text, className = "", style }: TypewriterTextPr
     const child = {
         visible: {
             opacity: 1,
-            y: 0,
             transition: {
-                type: "spring",
-                damping: 12,
-                stiffness: 100,
+                duration: 0,
             },
         },
         hidden: {
             opacity: 0,
-            y: 20, // slightly fade up effect as well
-            transition: {
-                type: "spring",
-                damping: 12,
-                stiffness: 100,
-            },
         },
     };
 
@@ -49,10 +40,14 @@ export function TypewriterText({ text, className = "", style }: TypewriterTextPr
             whileInView="visible"
             viewport={{ once: true }} // animate only once when it comes into view
         >
-            {text.split("").map((char, index) => (
-                <motion.span variants={child} key={index}>
-                    {char}
-                </motion.span>
+            {words.map((word, index) => (
+                <span key={index} className="inline-block whitespace-nowrap mr-[0.25em]">
+                    {word.split("").map((char, charIndex) => (
+                        <motion.span variants={child} key={charIndex} className="inline-block">
+                            {char}
+                        </motion.span>
+                    ))}
+                </span>
             ))}
         </motion.div>
     );
